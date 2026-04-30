@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Carrinho - Checkout</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <script src="src/js/carrinho.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color: white; text-decoration: none;">← Voltar à Loja</a></h1>
+    </header>
+
+    <section class="cart-section">
+        <h2>Itens Selecionados</h2>
+        <div id="cart-items"></div>
+        <!-- <div class="total">Total: R$ <span id="total">0,00</span></div> -->
+        <button onclick="limparCarrinho()" style="margin-top: 20px; background: #ef4444;">Esvaziar Carrinho</button>
+
+    <div class="total">Total: R$ <span id="total">0,00</span></div>
+    
+    <button id="btn-checkout" onclick="finalizarPagamento()" style="width: 100%; margin-top: 20px; background: #10b981;">
+        Finalizar Pagamento
+    </button>
+
+    <button onclick="limparCarrinho()" style="margin-top: 10px; background: #ef4444; width: 100%;">
+        Esvaziar Carrinho
+    </button>
+</section>
+</body>
+</html>

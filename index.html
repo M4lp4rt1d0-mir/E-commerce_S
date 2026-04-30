@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Liquida Silva</title>
+
+    <link rel="shortcut icon" href="src/Imgs/favicon_e_commerce_S.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Liquida Silva</h1>
+        <a href="carrinho.html" style="text-decoration: none; color: inherit;">
+        <div class="cart">Carrinho: <span id="cart-count">0</span></div>
+        </a>
+    </header>
+
+    <section class="hero">
+    <h2>Produtos em Destaque</h2>
+    <p>Compre os melhores produtos com preços incríveis</p>
+    </section>
+
+    <section class="products">
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Relógio" />
+        <h3>Relógio Premium</h3>
+        <p>Design moderno e elegante.</p>
+        <div class="price">R$ 199,90</div>
+        <button onclick="addToCart('Relógio Premium', 199.90)">Adicionar</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Fone de ouvido" />
+        <h3>Fone Bluetooth</h3>
+        <p>Som potente e bateria duradoura.</p>
+        <div class="price">R$ 149,90</div>
+        <button onclick="addToCart('Fone Bluetooth', 149.90)">Adicionar</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Tênis" />
+        <h3>Tênis Esportivo</h3>
+        <p>Confortável para o dia a dia.</p>
+        <div class="price">R$ 249,90</div>
+        <button onclick="addToCart('Tênis Esportivo', 249.90)">Adicionar</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="MacBook Air Pro" />
+        <h3>MacBook Air Pro</h3>
+        <p>Alta performance para trabalho.</p>
+        <div class="price">R$ 3499,90</div>
+        <button onclick="addToCart('MacBook Air Pro', 3499.90)">Adicionar</button>
+    </div>
+
+    <div class="product">
+        <img src="./src/Imgs/Blusa.jpeg" alt="Blusa" />
+        <h3>Blusa</h3>
+        <p>Estilo e conforto.</p>
+        <div class="price">R$ 79,90</div>
+        <button onclick="addToCart('Blusa', 79.90)">Adicionar</button>
+    </div>
+
+    <div class="product">
+        <img src="./src/Imgs/Conjunto.jpeg" alt="Conjunto" />
+        <h3>Conjunto</h3>
+        <p>Conjunto luxuoso.</p>
+        <div class="price">R$ 249,90</div>
+        <button onclick="addToCart('Conjunto', 249.90)">Adicionar</button>
+    </div>
+    
+    <div class="product">
+        <img src="./src/Imgs/Calça.jpeg" alt="Calsa" />
+        <h3>Calsa</h3>
+        <p>Melhor tecido</p>
+        <div class="price">R$ 69,90</div>
+        <button onclick="addToCart('Calsa', 69.90)">Adicionar</button>
+    </div>    
+ 
+    <div class="product">
+        <img src="./src/Imgs/Cueca.jpeg" alt="Cueca" />
+        <h3>Cueca</h3>
+        <p>Melhor conforto</p>
+        <div class="price">R$ 19,90</div>
+        <button onclick="addToCart('Cueca', 19.90)">Adicionar</button>
+    </div>
+    
+    <div class="product">
+        <img src="./src/Imgs/Anel.jpeg" alt="Anel" />
+        <h3>Anel</h3>
+        <p>Design elegante.</p>
+        <div class="price">R$ 58,90</div>
+        <button onclick="addToCart('Anel', 58.90)">Adicionar</button>
+    </div>
+    
+    <div class="product">
+        <img src="./src/Imgs/Bone.jpeg" alt="Bone" />
+        <h3>Bone</h3>
+        <p>Estilo e conforto.</p>
+        <div class="price">R$ 24,90</div>
+        <button onclick="addToCart('Bone', 24.90)">Adicionar</button>
+    </div>
+    
+    <div class="product">
+        <img src="./src/Imgs/Meia.jpeg" alt="Meia" />
+        <h3>Meia</h3>
+        <p>Conforto e estilo.</p>
+        <div class="price">R$ 14,90</div>
+        <button onclick="addToCart('Meia', 14.90)">Adicionar</button>
+    </div>
+    
+    <div class="product">
+        <img src="./src/Imgs/Mochila.jpeg" alt="Mochila" />
+        <h3>Mochila</h3>
+        <p>Alta capacidade.</p>
+        <div class="price">R$ 119,90</div>
+        <button onclick="addToCart('Mochila', 119.90)">Adicionar</button>
+    </div>
+
+    </section>
+
+    <section class="cart-section">
+    <h2>Meu Carrinho</h2>
+    <div id="cart-items"></div>
+    <div class="total">Total: R$ <span id="total">0,00</span></div>
+    </section>
+
+    <footer>
+    <p>&copy; 2026 Liquida Silva. Todos os direitos reservados.</p>
+    </footer>]
+
+    <script src="src/js/index.js"></script>
+
+</body>
+</html>

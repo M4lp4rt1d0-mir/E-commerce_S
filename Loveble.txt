@@ -1,0 +1,32 @@
+
+let cart = [];
+
+function addToCart(name, price) {
+  cart.push({ name, price });
+  updateCart();
+}
+
+function updateCart() {
+  const cartItems = document.getElementById("cart-items");
+  const cartCount = document.getElementById("cart-count");
+  const totalElement = document.getElementById("total");
+
+  cartItems.innerHTML = "";
+
+  // 1. Recalcula o total percorrendo o array atualizado
+  const totalValue = cart.reduce((sum, item) => sum + item.price, 0);
+
+  cart.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "cart-item";
+    div.innerHTML = `
+        <span>${item.name}</span>
+        <span>R$ ${item.price.toFixed(2).replace(".", ",")}</span>
+    `;
+    cartItems.appendChild(div);
+  });
+
+  // 2. Atualiza a interface
+  cartCount.textContent = cart.length;
+  totalElement.textContent = totalValue.toFixed(2).replace(".", ",");
+}
